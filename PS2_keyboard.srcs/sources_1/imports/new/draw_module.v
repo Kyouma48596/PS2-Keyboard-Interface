@@ -29,7 +29,8 @@ module draw_module(
 	output reg VGA_VS,
 	output reg [3:0] VGA_R,
 	output reg [3:0] VGA_G,
-	output reg [3:0] VGA_B
+	output reg [3:0] VGA_B,
+	output reg [10:0] LED
     );
 supply0 zero0;
 //make cloc
@@ -47,7 +48,7 @@ wire [9:0] sx;
 wire [9:0] sy;
 display_timings dispp(
 	clk_pix,
-	!btn_rst,
+	!clk_locked,
 	hsync,
 	vsync,
 	de,
@@ -62,9 +63,9 @@ ps2_receiver receev(
 	PS2_CLK,
 	PS2_DATA,
 	!btn_rst,
-	addr_in
+	addr_in,
+	LED
 );
-
 //drive decoder with addr_in
 wire [14:0] bram_address;
 bram_decoder deecod(
@@ -80,14 +81,15 @@ wire [1023:0] mmap;
         .douta_0(mmap),
         .wea_0(zer0));
 //make draw signals
-
+wire q_draw;
+assign q_draw = !(sx<=32 && sy<=32) ? 0 : mmap[32*(32-sy)-1-sx];
 //drive display
-//always @(posedge clk_pix)
-//begin
-//	VGA_HS <= hsync;
-//	VGA_VS<= vsync;
-//	VGA_R<=!de ? 0 : (q_draw ? 4'hF : 4'h0);
-//	VGA_G<=!de ? 0 : (q_draw ? 4'h0 : 4'hF);
-//	VGA_B<=!de ? 0 : (q_draw ? 4'h0 : 4'h0);
-//end
+always @(posedge clk_pix)
+begin
+	VGA_HS <= hsync;
+	VGA_VS<= vsync;
+	VGA_R<=!de ? 0 : (q_draw ? 4'hF : 4'h0);
+	VGA_G<=!de ? 0 : (q_draw ? 4'h0 : 4'hF);
+	VGA_B<=!de ? 0 : (q_draw ? 4'h0 : 4'h0);
+end
 endmodule
