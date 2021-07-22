@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626593256">
+<GenRun Id="impl_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626853706">
   <File Type="BITSTR-BMM" Name="ps2_receiver_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="ps2_receiver_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="ps2_receiver_timing_summary_init.rpt"/>

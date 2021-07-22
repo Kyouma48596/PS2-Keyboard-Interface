@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626593188">
+<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626853706">
   <File Type="PA-TCL" Name="ps2_receiver.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ps2_receiver_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ps2_receiver_reports.tcl"/>
@@ -48,6 +48,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
       <Desc>Vivado Synthesis Defaults</Desc>
     </StratHandle>
-    <Step Id="synth_design"/>
+    <Step Id="synth_design">
+      <Option Id="MoreOptsStr"><![CDATA[-quick]]></Option>
+    </Step>
   </Strategy>
 </GenRun>

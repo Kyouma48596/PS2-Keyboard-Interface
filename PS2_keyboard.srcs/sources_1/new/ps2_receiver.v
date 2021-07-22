@@ -21,28 +21,28 @@
 
 
 module ps2_receiver(
-    input wire PS2_CLK,
-    input wire PS2_DATA,
-    input wire CPU_RESETN,
+    input wire ps2clk,
+    input wire ps2data,
+    input wire rst,
     output wire [15:0] LED
     );
 //setup
 assign LED[15:11] = 5'b00000;
 
 //LED driver
-reg [10:0] LED_drive;
+reg [10:0] scan_code;
 
 //shiftreg action
-always @(negedge PS2_CLK or negedge CPU_RESETN)
+always @(negedge ps2clk or negedge rst)
 begin
-    if(!CPU_RESETN)
-        LED_drive<=0;
+    if(!rst)
+        scan_code<=0;
     else
-        LED_drive <= {PS2_DATA, LED_drive[10:1]};
+        scan_code <= {ps2data, scan_code[10:1]};
 end
 
 //LED output
-assign LED[10:0] = LED_drive[10:0];
+assign LED[10:0] = scan_code[10:0];
 
 
 endmodule

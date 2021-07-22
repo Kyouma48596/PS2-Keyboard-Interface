@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Jul 18 12:58:45 2021
+| Date         : Wed Jul 21 13:20:17 2021
 | Host         : DESKTOP-P9KU36P running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file ps2_receiver_timing_summary_routed.rpt -pb ps2_receiver_timing_summary_routed.pb -rpx ps2_receiver_timing_summary_routed.rpx -warn_on_violation
 | Design       : ps2_receiver
