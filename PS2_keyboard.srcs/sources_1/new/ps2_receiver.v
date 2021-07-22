@@ -24,10 +24,9 @@ module ps2_receiver(
     input wire ps2clk,
     input wire ps2data,
     input wire rst,
-    output wire [15:0] LED
+    output wire [10:0] out
     );
 //setup
-assign LED[15:11] = 5'b00000;
 
 //LED driver
 reg [10:0] scan_code;
@@ -42,7 +41,7 @@ begin
 end
 
 //LED output
-assign LED[10:0] = scan_code[10:0];
+assign out[10:0] = scan_code[10:0];
 
 
 endmodule

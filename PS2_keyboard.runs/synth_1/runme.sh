@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ps2_receiver.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ps2_receiver.tcl
+EAStep vivado -log draw_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source draw_module.tcl

@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626853706">
-  <File Type="PA-TCL" Name="ps2_receiver.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ps2_receiver_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="ps2_receiver_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ps2_receiver.vds"/>
-  <File Type="RDS-UTIL" Name="ps2_receiver_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ps2_receiver_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="ps2_receiver.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ps2_receiver_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ps2_receiver_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626934555">
+  <File Type="PA-TCL" Name="draw_module.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="draw_module_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="draw_module_reports.tcl"/>
+  <File Type="RDS-RDS" Name="draw_module.vds"/>
+  <File Type="RDS-UTIL" Name="draw_module_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="draw_module_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="draw_module.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="draw_module_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="draw_module_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/bram/bram.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bram_decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clock_gen_480p.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA_interface_project/VGA_interface_project.srcs/sources_1/new/clock_gen_480p.v"/>
+        <Attr Name="ImportTime" Val="1626780949"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/display_timings.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA_interface_project/VGA_interface_project.srcs/sources_1/new/display_timings.v"/>
+        <Attr Name="ImportTime" Val="1626781273"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/ps2_receiver.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -18,9 +50,24 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/draw_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA_interface_project/VGA_interface_project.srcs/sources_1/new/draw_module.v"/>
+        <Attr Name="ImportTime" Val="1626781784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/maps.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ps2_receiver"/>
+      <Option Name="TopModule" Val="draw_module"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -48,8 +95,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
       <Desc>Vivado Synthesis Defaults</Desc>
     </StratHandle>
-    <Step Id="synth_design">
-      <Option Id="MoreOptsStr"><![CDATA[-quick]]></Option>
-    </Step>
+    <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="bram_blk_mem_gen_0_0"/>
 </GenRun>
