@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626934555">
-  <File Type="PA-TCL" Name="draw_module.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="draw_module_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="draw_module_reports.tcl"/>
-  <File Type="RDS-RDS" Name="draw_module.vds"/>
-  <File Type="RDS-UTIL" Name="draw_module_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="draw_module_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="draw_module.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="draw_module_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="draw_module_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1626944519">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/bram/bram.bd">
@@ -43,6 +43,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/draw_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VGA_interface_project/VGA_interface_project.srcs/sources_1/new/draw_module.v"/>
+        <Attr Name="ImportTime" Val="1626781784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/ps2_receiver.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -50,10 +59,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/draw_module.v">
+    <File Path="$PSRCDIR/sources_1/new/top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../VGA_interface_project/VGA_interface_project.srcs/sources_1/new/draw_module.v"/>
-        <Attr Name="ImportTime" Val="1626781784"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -67,7 +74,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="draw_module"/>
+      <Option Name="TopModule" Val="top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
