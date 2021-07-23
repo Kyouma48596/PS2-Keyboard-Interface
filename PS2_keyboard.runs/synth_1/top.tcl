@@ -72,8 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a50ticsg324-1L
 
@@ -91,7 +89,7 @@ set_property ip_output_repo e:/PS2_keyboard/PS2_keyboard.cache/ip [current_proje
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files e:/PS2_keyboard/PS2_keyboard.srcs/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/maps.coe
+add_files c:/Users/Kyouma48596/Desktop/alphabet/coe/merged.coe
 read_verilog -library xil_defaultlib {
   E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/new/bram_decoder.v
   E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/imports/new/clock_gen_480p.v

@@ -32,9 +32,9 @@ module ps2_receiver(
 reg [10:0] scan_code;
 
 //shiftreg action
-always @(negedge ps2clk or negedge rst)
+always @(negedge ps2clk or posedge rst)
 begin
-    if(!rst)
+    if(rst)
         scan_code<=0;
     else
         scan_code <= {ps2data, scan_code[10:1]};

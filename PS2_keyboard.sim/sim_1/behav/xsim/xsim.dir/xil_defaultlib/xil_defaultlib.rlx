@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/PS2_keyboard/PS2_keyboard.ip_user_files/bd/bram/ip/bram_blk_mem_gen_0_0/sim/bram_blk_mem_gen_0_0.v,1627033727,verilog,,E:/PS2_keyboard/PS2_keyboard.ip_user_files/bd/bram/sim/bram.v,,bram_blk_mem_gen_0_0,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.ip_user_files/bd/bram/sim/bram.v,1626933937,verilog,,E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/new/bram_decoder.v,,bram,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/imports/new/clock_gen_480p.v,1626780949,verilog,,E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/imports/new/display_timings.v,,clock_gen_480p,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/imports/new/display_timings.v,1626781273,verilog,,E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/imports/new/draw_module.v,,display_timings,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/imports/new/draw_module.v,1626944254,verilog,,E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/new/ps2_receiver.v,,draw_module,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/new/bram_decoder.v,1626936742,verilog,,E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/imports/new/clock_gen_480p.v,,bram_decoder,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/new/ps2_receiver.v,1626957975,verilog,,E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/new/top.v,,ps2_receiver,,,,,,,,
+E:/PS2_keyboard/PS2_keyboard.srcs/sources_1/new/top.v,1626957916,verilog,,,,top,,,,,,,,

@@ -30,7 +30,7 @@ module top(
 	output wire [3:0] VGA_R,
 	output wire [3:0] VGA_G,
 	output wire [3:0] VGA_B,
-	output wire [10:0] LED
+	output wire [15:0] LED
     );
 supply0 zero0;
 //make cloc
@@ -65,7 +65,7 @@ ps2_receiver receev(
 	!btn_rst,
 	addr_in
 );
-assign LED[10:0] = addr_in[10:0];
+assign LED[15:0] = addr_in[10:0];
 //drive decoder with addr_in
 wire [14:0] bram_address;
 bram_decoder deecod(

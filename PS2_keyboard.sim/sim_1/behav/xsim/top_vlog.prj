@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PS2_keyboard.ip_user_files/bd/bram/ip/bram_blk_mem_gen_0_0/sim/bram_blk_mem_gen_0_0.v" \
+"../../../../PS2_keyboard.ip_user_files/bd/bram/sim/bram.v" \
+"../../../../PS2_keyboard.srcs/sources_1/new/bram_decoder.v" \
+"../../../../PS2_keyboard.srcs/sources_1/imports/new/clock_gen_480p.v" \
+"../../../../PS2_keyboard.srcs/sources_1/imports/new/display_timings.v" \
+"../../../../PS2_keyboard.srcs/sources_1/imports/new/draw_module.v" \
+"../../../../PS2_keyboard.srcs/sources_1/new/ps2_receiver.v" \
+"../../../../PS2_keyboard.srcs/sources_1/new/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

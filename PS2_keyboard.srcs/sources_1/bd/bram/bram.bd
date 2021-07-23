@@ -69,7 +69,7 @@
         "inst_hier_path": "blk_mem_gen_0",
         "parameters": {
           "Coe_File": {
-            "value": "maps.coe"
+            "value": "c:/Users/Kyouma48596/Desktop/alphabet/coe/merged.coe"
           },
           "Enable_32bit_Address": {
             "value": "false"
@@ -88,6 +88,9 @@
           },
           "Register_PortA_Output_of_Memory_Primitives": {
             "value": "true"
+          },
+          "Remaining_Memory_Locations": {
+            "value": "00"
           },
           "Use_Byte_Write_Enable": {
             "value": "false"

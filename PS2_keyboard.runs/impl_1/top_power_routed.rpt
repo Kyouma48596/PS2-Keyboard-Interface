@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Jul 22 14:47:07 2021
+| Date             : Fri Jul 23 17:43:37 2021
 | Host             : DESKTOP-P9KU36P running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.185        |
+| Total On-Chip Power (W)  | 0.189        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.122        |
+| Dynamic (W)              | 0.127        |
 | Device Static (W)        | 0.063        |
 | Effective TJA (C/W)      | 4.8          |
 | Max Ambient (C)          | 99.1         |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.002 |     1167 |       --- |             --- |
-|   LUT as Logic |     0.002 |      608 |     32600 |            1.87 |
+| Slice Logic    |     0.002 |     1168 |       --- |             --- |
+|   LUT as Logic |     0.002 |      609 |     32600 |            1.87 |
 |   F7/F8 Muxes  |    <0.001 |      408 |     32600 |            1.25 |
 |   Register     |    <0.001 |       56 |     65200 |            0.09 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   CARRY4       |    <0.001 |        3 |      8150 |            0.04 |
 |   Others       |     0.000 |       74 |       --- |             --- |
-| Signals        |     0.004 |     1283 |       --- |             --- |
+| Signals        |     0.004 |     1287 |       --- |             --- |
 | Block RAM      |     0.016 |       32 |        75 |           42.67 |
 | MMCM           |     0.096 |        1 |         5 |           20.00 |
-| I/O            |     0.004 |       29 |       210 |           13.81 |
+| I/O            |     0.008 |       34 |       210 |           16.19 |
 | Static Power   |     0.063 |          |           |                 |
-| Total          |     0.185 |          |           |                 |
+| Total          |     0.189 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       0.950 |     0.028 |       0.022 |      0.006 |       NA    | Unspecified | NA         |
+| Vccint    |       0.950 |     0.029 |       0.023 |      0.006 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.065 |       0.053 |      0.011 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -146,7 +146,7 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| top               |     0.122 |
+| top               |     0.127 |
 |   bram_i          |     0.018 |
 |     blk_mem_gen_0 |     0.018 |
 |       U0          |     0.018 |

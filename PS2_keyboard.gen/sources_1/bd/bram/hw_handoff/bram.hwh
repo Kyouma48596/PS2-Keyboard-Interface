@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jul 22 11:35:40 2021" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jul 23 17:33:13 2021" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys-a7-50t:part0:1.0" DEVICE="7a50ti" NAME="bram" PACKAGE="csg324" SPEEDGRADE="-1L"/>
 
@@ -58,7 +58,7 @@
         <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="bram_blk_mem_gen_0_0.mif"/>
         <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
         <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="1"/>
-        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="00"/>
         <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
         <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
         <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
@@ -158,9 +158,9 @@
         <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
         <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
         <PARAMETER NAME="Load_Init_File" VALUE="true"/>
-        <PARAMETER NAME="Coe_File" VALUE="maps.coe"/>
+        <PARAMETER NAME="Coe_File" VALUE="c:/Users/Kyouma48596/Desktop/alphabet/coe/merged.coe"/>
         <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="true"/>
-        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="00"/>
         <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
         <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
         <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
