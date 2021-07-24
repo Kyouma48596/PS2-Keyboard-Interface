@@ -67,7 +67,7 @@ ps2_receiver receev(
 );
 assign LED[15:0] = addr_in[10:0];
 //drive decoder with addr_in
-wire [14:0] bram_address;
+wire [12:0] bram_address;
 bram_decoder deecod(
 	addr_in,
 	bram_address

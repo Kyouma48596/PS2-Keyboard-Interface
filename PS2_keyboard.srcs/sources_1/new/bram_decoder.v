@@ -22,7 +22,7 @@
 
 module bram_decoder(
     input [10:0] addr_in,
-    output reg [14:0] addr_out
+    output reg [12:0] addr_out
     );
 always @*
 begin

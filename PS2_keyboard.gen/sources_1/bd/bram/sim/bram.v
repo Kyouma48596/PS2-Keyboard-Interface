@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Fri Jul 23 17:33:12 2021
+//Date        : Sat Jul 24 19:52:17 2021
 //Host        : DESKTOP-P9KU36P running 64-bit major release  (build 9200)
 //Command     : generate_target bram.bd
 //Design      : bram
@@ -34,7 +34,7 @@ module bram
   assign douta_0[1023:0] = blk_mem_gen_0_douta;
   assign wea_0_1 = wea_0[0];
   bram_blk_mem_gen_0_0 blk_mem_gen_0
-       (.addra(addra_0_1),
+       (.addra(addra_0_1[12:0]),
         .clka(clka_0_1),
         .dina(dina_0_1),
         .douta(blk_mem_gen_0_douta),

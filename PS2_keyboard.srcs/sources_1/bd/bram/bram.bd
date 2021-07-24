@@ -69,7 +69,7 @@
         "inst_hier_path": "blk_mem_gen_0",
         "parameters": {
           "Coe_File": {
-            "value": "c:/Users/Kyouma48596/Desktop/alphabet/coe/merged.coe"
+            "value": "merged2.coe"
           },
           "Enable_32bit_Address": {
             "value": "false"
@@ -83,14 +83,20 @@
           "Load_Init_File": {
             "value": "true"
           },
+          "Operating_Mode_A": {
+            "value": "WRITE_FIRST"
+          },
           "Read_Width_A": {
             "value": "1024"
+          },
+          "Register_PortA_Output_of_Memory_Core": {
+            "value": "false"
           },
           "Register_PortA_Output_of_Memory_Primitives": {
             "value": "true"
           },
           "Remaining_Memory_Locations": {
-            "value": "00"
+            "value": "0"
           },
           "Use_Byte_Write_Enable": {
             "value": "false"
@@ -99,7 +105,7 @@
             "value": "false"
           },
           "Write_Depth_A": {
-            "value": "32768"
+            "value": "8192"
           },
           "Write_Width_A": {
             "value": "32"
