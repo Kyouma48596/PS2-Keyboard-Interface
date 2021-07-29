@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Jul 29 11:47:43 2021
+| Date         : Thu Jul 29 12:34:49 2021
 | Host         : DESKTOP-P9KU36P running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            2 |
-| No           | No                    | Yes                    |              20 |            4 |
-| No           | Yes                   | No                     |              22 |            9 |
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |              20 |            8 |
+| No           | Yes                   | No                     |              22 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              10 |            4 |
+| Yes          | Yes                   | No                     |              10 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,12 +73,12 @@ Table of Contents
 +--------------------+---------------+------------------------+------------------+----------------+--------------+
 |    Clock Signal    | Enable Signal |    Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------+---------------+------------------------+------------------+----------------+--------------+
-|  clkk/clk_pix      |               |                        |                2 |              4 |         2.00 |
-|  clkk/clk_pix      |               | draww/vga_g[3]_i_1_n_0 |                1 |              4 |         4.00 |
+|  clkk/clk_pix      |               |                        |                3 |              4 |         1.33 |
 |  clkk/clk_pix      |               | dispp/sx_reg[9]_0      |                1 |              4 |         4.00 |
-|  clkk/clk_pix      | dispp/sy_1    | clkk/rst0              |                4 |             10 |         2.50 |
-|  clkk/clk_pix      |               | clkk/rst0              |                7 |             14 |         2.00 |
-| ~PS2_CLK_IBUF_BUFG |               | receev/AR[0]           |                4 |             20 |         5.00 |
+|  clkk/clk_pix      |               | draww/vga_g[3]_i_1_n_0 |                1 |              4 |         4.00 |
+|  clkk/clk_pix      | dispp/sy_1    | clkk/rst0              |                5 |             10 |         2.00 |
+|  clkk/clk_pix      |               | clkk/rst0              |                6 |             14 |         2.33 |
+| ~PS2_CLK_IBUF_BUFG |               | receev/AR[0]           |                8 |             20 |         2.50 |
 +--------------------+---------------+------------------------+------------------+----------------+--------------+
 
 
