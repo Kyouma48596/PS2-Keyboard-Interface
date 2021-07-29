@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jul 29 09:21:07 2021
-# Process ID: 12620
+# Start of session at: Thu Jul 29 11:42:49 2021
+# Process ID: 3824
 # Current directory: E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1
 # Command line: vivado.exe -log bram_blk_mem_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram_blk_mem_gen_0_0.tcl
 # Log file: E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1/bram_blk_mem_gen_0_0.vds
@@ -17,11 +17,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t
 INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12004
+INFO: [Synth 8-7075] Helper process launched with PID 12944
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1001.223 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1044.758 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'bram_blk_mem_gen_0_0' [e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/synth/bram_blk_mem_gen_0_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'bram_blk_mem_gen_0_0' [e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/synth/bram_blk_mem_gen_0_0.vhd:67]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -33,7 +33,7 @@ INFO: [Synth 8-638] synthesizing module 'bram_blk_mem_gen_0_0' [e:/PS2_keyboard/
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
 	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_ALGORITHM bound to: 1 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
@@ -51,11 +51,11 @@ INFO: [Synth 8-638] synthesizing module 'bram_blk_mem_gen_0_0' [e:/PS2_keyboard/
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 1024 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 1024 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 16384 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 512 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 14 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -65,11 +65,11 @@ INFO: [Synth 8-638] synthesizing module 'bram_blk_mem_gen_0_0' [e:/PS2_keyboard/
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 16384 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 16384 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
+	Parameter C_WRITE_WIDTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 1024 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -94,25 +94,25 @@ INFO: [Synth 8-638] synthesizing module 'bram_blk_mem_gen_0_0' [e:/PS2_keyboard/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 32 - type: string 
-	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     85.70596 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/synth/bram_blk_mem_gen_0_0.vhd:234]
-INFO: [Synth 8-256] done synthesizing module 'bram_blk_mem_gen_0_0' (9#1) [e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/synth/bram_blk_mem_gen_0_0.vhd:69]
+	Parameter C_COUNT_36K_BRAM bound to: 28 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     72.910976 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/synth/bram_blk_mem_gen_0_0.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'bram_blk_mem_gen_0_0' (9#1) [e:/PS2_keyboard/PS2_keyboard.gen/sources_1/bd/bram/ip/bram_blk_mem_gen_0_0/synth/bram_blk_mem_gen_0_0.vhd:67]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished RTL Elaboration : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1306.902 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.314 . Memory (MB): peak = 1281.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -124,30 +124,30 @@ Parsing XDC File [E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1
 Finished Parsing XDC File [E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1306.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1281.141 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 1306.902 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 1281.141 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Constraint Validation : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a50ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:14 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -169,25 +169,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:30 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -205,37 +205,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -251,32 +251,33 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |RAMB36E1 |    32|
+|1     |RAMB18E1 |     1|
+|2     |RAMB36E1 |    28|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1306.902 ; gain = 305.680
-Synthesis Optimization Complete : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1306.902 ; gain = 305.680
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:01:25 . Memory (MB): peak = 1281.141 ; gain = 236.383
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.141 ; gain = 236.383
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1306.902 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1281.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1306.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1281.141 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:45 . Memory (MB): peak = 1306.902 ; gain = 305.680
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:41 . Memory (MB): peak = 1281.141 ; gain = 236.383
 INFO: [Common 17-1381] The checkpoint 'E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1/bram_blk_mem_gen_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bram_blk_mem_gen_0_0, cache-ID = 7244448f50e77c62
-INFO: [Coretcl 2-1174] Renamed 68 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bram_blk_mem_gen_0_0, cache-ID = eee54891b7d5bec2
+INFO: [Coretcl 2-1174] Renamed 62 cell refs.
 INFO: [Common 17-1381] The checkpoint 'E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1/bram_blk_mem_gen_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bram_blk_mem_gen_0_0_utilization_synth.rpt -pb bram_blk_mem_gen_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 29 09:23:00 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 29 11:44:38 2021...

@@ -158,33 +158,33 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
-  set addra_0 [ create_bd_port -dir I -from 13 -to 0 addra_0 ]
+  set addra_0 [ create_bd_port -dir I -from 9 -to 0 addra_0 ]
   set clka_0 [ create_bd_port -dir I -type clk clka_0 ]
-  set dina_0 [ create_bd_port -dir I -from 31 -to 0 dina_0 ]
   set douta_0 [ create_bd_port -dir O -from 1023 -to 0 douta_0 ]
-  set wea_0 [ create_bd_port -dir I -from 0 -to 0 wea_0 ]
 
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
   set_property -dict [ list \
    CONFIG.Byte_Size {9} \
-   CONFIG.Coe_File {merged.coe} \
+   CONFIG.Coe_File {merged3.coe} \
    CONFIG.EN_SAFETY_CKT {false} \
    CONFIG.Enable_32bit_Address {false} \
    CONFIG.Enable_A {Always_Enabled} \
    CONFIG.Fill_Remaining_Memory_Locations {true} \
    CONFIG.Load_Init_File {true} \
+   CONFIG.Memory_Type {Single_Port_ROM} \
    CONFIG.Operating_Mode_A {WRITE_FIRST} \
+   CONFIG.Port_A_Write_Rate {0} \
    CONFIG.Read_Width_A {1024} \
-   CONFIG.Read_Width_B {32} \
+   CONFIG.Read_Width_B {1024} \
    CONFIG.Register_PortA_Output_of_Memory_Core {false} \
    CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
    CONFIG.Remaining_Memory_Locations {0} \
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
-   CONFIG.Write_Depth_A {16384} \
-   CONFIG.Write_Width_A {32} \
-   CONFIG.Write_Width_B {32} \
+   CONFIG.Write_Depth_A {1024} \
+   CONFIG.Write_Width_A {1024} \
+   CONFIG.Write_Width_B {1024} \
    CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_0
 
@@ -192,8 +192,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net addra_0_1 [get_bd_ports addra_0] [get_bd_pins blk_mem_gen_0/addra]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_ports douta_0] [get_bd_pins blk_mem_gen_0/douta]
   connect_bd_net -net clka_0_1 [get_bd_ports clka_0] [get_bd_pins blk_mem_gen_0/clka]
-  connect_bd_net -net dina_0_1 [get_bd_ports dina_0] [get_bd_pins blk_mem_gen_0/dina]
-  connect_bd_net -net wea_0_1 [get_bd_ports wea_0] [get_bd_pins blk_mem_gen_0/wea]
 
   # Create address segments
 

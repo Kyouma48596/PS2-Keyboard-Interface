@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jul 29 09:21:07 2021
-# Process ID: 12620
+# Start of session at: Thu Jul 29 11:42:49 2021
+# Process ID: 3824
 # Current directory: E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1
 # Command line: vivado.exe -log bram_blk_mem_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram_blk_mem_gen_0_0.tcl
 # Log file: E:/PS2_keyboard/PS2_keyboard.runs/bram_blk_mem_gen_0_0_synth_1/bram_blk_mem_gen_0_0.vds

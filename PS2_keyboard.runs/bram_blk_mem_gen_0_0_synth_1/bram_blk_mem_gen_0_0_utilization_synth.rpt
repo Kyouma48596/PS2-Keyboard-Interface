@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Jul 29 09:22:59 2021
+| Date         : Thu Jul 29 11:44:38 2021
 | Host         : DESKTOP-P9KU36P running 64-bit major release  (build 9200)
 | Command      : report_utilization -file bram_blk_mem_gen_0_0_utilization_synth.rpt -pb bram_blk_mem_gen_0_0_utilization_synth.pb
 | Design       : bram_blk_mem_gen_0_0
@@ -67,10 +67,11 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |   32 |     0 |        75 | 42.67 |
-|   RAMB36/FIFO*    |   32 |     0 |        75 | 42.67 |
-|     RAMB36E1 only |   32 |       |           |       |
-|   RAMB18          |    0 |     0 |       150 |  0.00 |
+| Block RAM Tile    | 28.5 |     0 |        75 | 38.00 |
+|   RAMB36/FIFO*    |   28 |     0 |        75 | 37.33 |
+|     RAMB36E1 only |   28 |       |           |       |
+|   RAMB18          |    1 |     0 |       150 |  0.67 |
+|     RAMB18E1 only |    1 |       |           |       |
 +-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -147,7 +148,8 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| RAMB36E1 |   32 |        Block Memory |
+| RAMB36E1 |   28 |        Block Memory |
+| RAMB18E1 |    1 |        Block Memory |
 +----------+------+---------------------+
 
 
