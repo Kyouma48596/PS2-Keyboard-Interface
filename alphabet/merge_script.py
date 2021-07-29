@@ -13,10 +13,7 @@ for iter in range(26):
 	for i in range(32):
 		for j in range(32):
 			x = "1" if img[i,j]==255 else "0"
-			if (j==31):
-				if(i==31):
-					coe_file.write(x+";\n")
-				else:
-					coe_file.write(x+", ")
+			if(i==31 and j==31):
+				coe_file.write(x+",\n")
 			else:
 				coe_file.write(x)
