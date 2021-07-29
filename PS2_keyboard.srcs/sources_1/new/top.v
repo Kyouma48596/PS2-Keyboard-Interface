@@ -67,7 +67,7 @@ ps2_receiver receev(
 );
 assign LED[15:0] = addr_in[10:0];
 //drive decoder with addr_in
-wire [12:0] bram_address;
+wire [9:0] bram_address;
 bram_decoder deecod(
 	addr_in,
 	bram_address
@@ -77,9 +77,7 @@ wire [1023:0] mmap;
   bram bram_i
        (.addra_0(bram_address),
         .clka_0(clk_pix),
-        .dina_0(zer0),
-        .douta_0(mmap),
-        .wea_0(zer0));
+        .douta_0(mmap));
 
 //instantiate drawer
 wire vga_hs, vga_vs;

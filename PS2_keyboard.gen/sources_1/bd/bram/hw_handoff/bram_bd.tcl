@@ -158,7 +158,7 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
-  set addra_0 [ create_bd_port -dir I -from 14 -to 0 addra_0 ]
+  set addra_0 [ create_bd_port -dir I -from 13 -to 0 addra_0 ]
   set clka_0 [ create_bd_port -dir I -type clk clka_0 ]
   set dina_0 [ create_bd_port -dir I -from 31 -to 0 dina_0 ]
   set douta_0 [ create_bd_port -dir O -from 1023 -to 0 douta_0 ]
@@ -168,7 +168,7 @@ proc create_root_design { parentCell } {
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
   set_property -dict [ list \
    CONFIG.Byte_Size {9} \
-   CONFIG.Coe_File {merged2.coe} \
+   CONFIG.Coe_File {merged.coe} \
    CONFIG.EN_SAFETY_CKT {false} \
    CONFIG.Enable_32bit_Address {false} \
    CONFIG.Enable_A {Always_Enabled} \
@@ -182,7 +182,7 @@ proc create_root_design { parentCell } {
    CONFIG.Remaining_Memory_Locations {0} \
    CONFIG.Use_Byte_Write_Enable {false} \
    CONFIG.Use_RSTA_Pin {false} \
-   CONFIG.Write_Depth_A {8192} \
+   CONFIG.Write_Depth_A {16384} \
    CONFIG.Write_Width_A {32} \
    CONFIG.Write_Width_B {32} \
    CONFIG.use_bram_block {Stand_Alone} \
