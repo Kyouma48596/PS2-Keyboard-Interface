@@ -15,7 +15,7 @@ This module uses the FPGAs [PLL](https://en.wikipedia.org/wiki/Phase-locked_loop
 This module uses simple counters and combinational logic to generate the display signals necessary to drive the VGA display.
 ### draw_module
 The final output module, it receives the memory map from BRAM and internally decodes the [1023:0] data vector into a 32x32 character map, which controls when a pixel is drawn/left blank. It is also responsible for driving the FPGAs VGA output, with the driving signals received from the VGA signal generator (display_timings).
-##Results
+## Results
 ![N](https://github.com/Kyouma48596/PS2-Keyboard-Interface/blob/main/Results/N.jpg)
 ![E](https://github.com/Kyouma48596/PS2-Keyboard-Interface/blob/main/Results/E.jpg)
 ![X](https://github.com/Kyouma48596/PS2-Keyboard-Interface/blob/main/Results/X.jpg)
